@@ -24,9 +24,9 @@ header {
   width:100%;
   height:800px;
   margin:0 auto;
-  padding-right:0px; 
+  padding-right:0px;
   padding-left:0px;
-  background-image:url(grandcanyon.png);
+  background-image:url(IMG_5729.JPG);
   background-size:cover;
   text-align: center;
 }
@@ -82,7 +82,7 @@ padding-top:100px;
   margin:0 auto;
   padding-right:0px;
   padding-left:0px;
-  background-image:url(beach.jpg);
+  background-image:url(beach.JPG);
   background-size:cover;
 }
 
@@ -92,7 +92,7 @@ padding-top:100px;
     margin:0 auto;
     padding-right:0px;
     padding-left:0px;
-    background-image:url(gurandoyukyo.jpg);
+    background-image:url(gurandoyukyo.JPG);
     background-size:cover;
 }
 
@@ -295,4 +295,4 @@ footer p{
   padding:10px 30px;
   color:white;
   margin:0px;
-}
+}}

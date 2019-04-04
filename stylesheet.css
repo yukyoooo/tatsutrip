@@ -24,7 +24,7 @@ header {
   width:100%;
   height:800px;
   margin:0 auto;
-  padding-right:0px;
+  padding-right:0px; 
   padding-left:0px;
   background-image:url(grandcanyon.png);
   background-size:cover;

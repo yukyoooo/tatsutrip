@@ -117,11 +117,11 @@ header p{
   text-align: center;
 }
 .matome-right{
-width:100%;
+  width:100%;
 }
 .matome-left{
-width:100%;
-padding-bottom: 30px;
+  width:100%;
+  padding-bottom: 30px;
 }
 .matome-right h2{
   font-size: 18px;
@@ -149,9 +149,25 @@ padding-bottom: 30px;
   font-size: 10px;
 }
 
+.faq-wrapper {
+  padding-top:0px;
+}
+#faq-list {
+  width: 100%;
+  padding:0px 0px 0px  0px;
+}
+
+.faq-list-item h3 {
+  font-size: 12px;
+}
+.answer {
+  font-size: 10px;
+  line-height: 20px;
+}
+
 footer {
   height:30px;
-  padding-top:0px;
+
   background-color: rgba(34, 49, 52, 0.9);
 }
 footer p{
@@ -164,3 +180,4 @@ footer p{
 
 
 }
+

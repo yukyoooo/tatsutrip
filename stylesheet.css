@@ -25,20 +25,20 @@ header {
   margin:0 auto;
   padding-right:0px;
   padding-left:0px;
-  background-image:url(IMG_5729.JPG);
+  background-image:url(S__6103072.jpg);
   background-size:cover;
   text-align: center;
 }
 .container h1{
-  padding:400px 100px;
+  padding:350px 100px;
   margin:0px;
   opacity: 0.8;
-  color:white;
+  color:black;
   font-size: 30px;
 }
 
 .lesson-wrapper {
-  height: 600px;
+  height: 700px;
   padding:50px 0px 200px 0px;
   background-color:white;
   text-align: center;
@@ -67,48 +67,28 @@ header {
   border-radius: 3000px;
 
 }
+.guide{
+  text-align: center;
+}
+.guide h2{
+  font-size: 30px;
+  padding-bottom:50px;
+}
+.guide p{
+  font-weight: normal;
+  font-size:20px;
+}
+.guide-text p{
+  font-size:18px;
+  padding: 30px 20%;
+  line-height: 35px;
+}
+.guide img{
+  margin:10px 0px;
+  border-radius: 20px;
+}
 
-.question-first{
-  width:100%;
-  height:600px;
-  margin:0 auto;
-  padding-right:0px;
-  padding-left:0px;
-  background-image:url(beach.jpg);
-  background-size:cover;
-}
-.question-second{
-    width:100%;
-    height:600px;
-    margin:0 auto;
-    padding-right:0px;
-    padding-left:0px;
-    background-image:url(gurandoyukyo.jpg);
-    background-size:cover;
-}
-.question1{
-    padding:300px 100px;
-  }
-.question1 p{
-    margin:0px;
-    line-height: 0px;
-    font-weight: normal;
-    opacity: 0.8;
-    color:black;
-    font-size: 15px;
-  }
-.question2{
-    float:right;
-    padding:300px 100px;
-  }
-.question2 p{
-    margin:0px;
-    line-height: 0px;
-    font-weight: normal;
-    opacity: 0.8;
-    color:white;
-    font-size: 15px;
-  }
+
 .explain {
   max-height:700px;
   text-align: center;

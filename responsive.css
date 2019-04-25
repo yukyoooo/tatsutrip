@@ -195,4 +195,42 @@ footer p{
 }
 
 
+
+
+.section-title {
+
+  font-size: 18px;
+
+}
+.contact-form{
+  padding-top:70px;
+  height:550px;
+
+}
+input, textarea{
+  width:60%;
+}
+.contact-form p{
+  font-size: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

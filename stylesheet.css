@@ -1,3 +1,4 @@
+
 *{box-sizing:border-box;}
 *{list-style: none;}
 
@@ -282,6 +283,43 @@ header {
   /* displayプロパティをnoneにしてください */
   display: none;
 }
+
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+  margin:0 30% 15px 30%;
+}
+.contact-form{
+  padding-top:100px;
+  text-align: center;
+  background-color:#f5f5f5;
+  height:670px;
+
+}
+input, textarea{
+  width:400px;
+  margin-top:0px;
+  margin-bottom:0px;
+  padding:10px;
+  font-size:18px;
+  padding:5px;
+  border:1px solid #dee7ec;
+  font-size: 10px;
+}
+.contact-submit{
+  background-color: #5dca88;
+  color:white;
+  width:140px;
+  padding: 10px;
+
+}
+.contact-form p{
+  margin-bottom: 0px;
+}
+
 
 
 footer {

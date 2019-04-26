@@ -320,7 +320,10 @@ input, textarea{
   margin-bottom: 0px;
 }
 
-
+.formgoogle{
+  text-align: center;
+  height: auto;
+}
 
 footer {
   padding-top:100px;

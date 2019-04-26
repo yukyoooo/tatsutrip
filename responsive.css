@@ -214,7 +214,10 @@ input, textarea{
   font-size: 10px;
 }
 
-
+.formgoogle iframe{
+  width:100%;
+  
+}
 
 
 

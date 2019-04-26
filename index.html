@@ -186,54 +186,74 @@
       </div>
     </div>
 
-    <form id="form" class="form">
-      <div class="contact-form">
-        <!-- <h3>要素を追加し、「section-title」というclassをつけてください -->
-        <h3 class="section-title">お問い合わせ</h3>
+ 
 
-        <!-- <p>要素を3つ追加してください -->
-        <div class="form-group">
-          <p id="error-message" class="error-message"></p>
-          <p>名前（必須）</p>
-          <input id="text-form1" class="text-form">
-        </div>
-        <div class="form-group">
-          <p id="error-message" class="error-message"></p>
-          <p>メールアドレス（必須）</p>
-          <input id="text-form2" class="text-form">
-        </div>
-        <div class="form-group">
-          <p>人数：</p>
-          <select id="select-form1" class="select-form1">
-            <option value="0">選択してください</option>
-            <option value="1">2人</option>
-            <option value="2">3人</option>
-            <option value="3">4人</option>
-            <option value="3">5人</option>
-            <option value="3">まだ決まっていない</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p>滞在日数：</p>
-          <select id="select-form2" class="select-form2">
-            <option value="0">選択してください</option>
-            <option value="1">2泊3日</option>
-            <option value="2">3泊4日</option>
-            <option value="3">4泊5日</option>
-            <option value="3">5泊6日</option>
-            <option value="3">まだ決まっていない</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <p id="error-message" class="error-message"></p>
-          <p>お問い合わせ内容（必須）</p>
-          <textarea id="text-form3" class="text-form"></textarea>
-        </div>
-        <p>※必須項目は必ずご入力ください</p>
-        <input class="contact-submit" id="btn" type="submit" value="送信">
+      <!-- <div class="contact-form"> -->
 
+        <!-- <h3 class="section-title">お問い合わせ</h3> -->
+
+
+        <!-- <div class="form-group"> -->
+          <!-- <p id="error-message" class="error-message"></p> -->
+          <!-- <p>名前（必須）</p> -->
+          <!-- <input id="text-form1" class="text-form" name="name"> -->
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+          <!-- <p id="error-message" class="error-message"></p> -->
+          <!-- <p>メールアドレス（必須）</p> -->
+          <!-- <input id="text-form2" class="text-form" name="from"> -->
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+          <!-- <p>人数：</p> -->
+          <!-- <select id="select-form1" class="select-form1" name="member"> -->
+            <!-- <option value="0">選択してください</option> -->
+            <!-- <option value="1">2人</option> -->
+            <!-- <option value="2">3人</option> -->
+            <!-- <option value="3">4人</option> -->
+            <!-- <option value="3">5人</option> -->
+            <!-- <option value="3">まだ決まっていない</option> -->
+          <!-- </select> -->
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+          <!-- <p>滞在日数：</p> -->
+          <!-- <select id="select-form2" class="select-form2" name="days"> -->
+            <!-- <option value="0">選択してください</option> -->
+            <!-- <option value="1">2泊3日</option> -->
+            <!-- <option value="2">3泊4日</option> -->
+            <!-- <option value="3">4泊5日</option> -->
+            <!-- <option value="3">5泊6日</option> -->
+            <!-- <option value="3">まだ決まっていない</option> -->
+          <!-- </select> -->
+        <!-- </div> -->
+        <!-- <div class="form-group"> -->
+          <!-- <p id="error-message" class="error-message"></p> -->
+          <!-- <p>お問い合わせ内容（必須）</p> -->
+          <!-- <textarea id="text-form3" class="text-form" name="content"></textarea> -->
+        <!-- </div> -->
+        <!-- <p>※必須項目は必ずご入力ください</p> -->
+        <!-- <input class="contact-submit" id="btn" type="submit" name="send" value="送信"> -->
+
+
+        <?php
+          mb_language("Japanese");
+          mb_internal_encoding("UTF-8");
+          $to = $_POST['mrym12000@gmail.com'];
+          $name = $_POST['name'];
+          $from = $_POST['from'];
+          $member = $_POST['member'];
+          $days = $_POST['days'];
+          $content = $_POST['content'];
+          $contents = $name + $from + $member + $days + $content
+          if(mb_send_mail($to, $title, $contents)){
+            echo "メールを送信しました";
+          } else {
+            echo "メールの送信に失敗しました";
+          };
+        ?>
+
+      <div class ="formgoogle">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeLdrTeMAVOtDkzfetvcCZyYZtBA_YVbtGQYKEAPGyuDinDqQ/viewform?embedded=true" width="640" height="1362" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます...</iframe>
       </div>
-    </form>
 
     <footer>
       <div class="footer-wrapper">
